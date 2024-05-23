@@ -1,0 +1,255 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+/* empeiza en el nav */
+header {
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Catamaran, sans-serif;
+  box-sizing: inherit;
+  padding: 15px;
+  background-color: black;
+  color: #fff;
+  height: 30px;
+
+}
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: Catamaran, sans-serif;
+  box-sizing: inherit;
+  padding: .5em 1em;
+
+}
+
+.nav-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  gap: 20px;
+
+}
+
+.nav-item {
+  border: 3px solid rgb(80, 88, 199);
+  background-color: rgba(50, 79, 173, 0.973);
+  padding: 5px;
+  border-radius: 10px;
+  font-family: cursive;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+
+}
+
+.nav-item a:hover {
+  color: rgba(0, 0, 0, 0.884);
+  transition: 0.3s;
+}
+
+body {
+
+  background-image: url("../imgs/backgroundportfolio.jpg")
+}
+
+/* termina el nav */
+
+
+/* empieza el main */
+
+.contenedor-principal {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 0px 1px 200px
+}
+
+.imagen {
+
+  border-radius: 6px;
+  height: auto;
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  width: 420px;
+
+}
+
+p {
+  justify-content: center;
+  text-align: center;
+  color: white;
+  width: 50%;
+  height: 200px;
+  overflow: auto;
+  margin-right: 50px;
+  margin-left: 50px;
+  font-size: 25px;
+
+}
+
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+  .contenedor-principal {
+    width: 74vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 20px;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+
+  header,
+  .nav-container,
+  .nav-row,
+  .nav-item {
+    width: 45vh;
+  }
+
+  .contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: auto;
+    gap: 20px;
+    margin: auto;
+  }
+
+  .imagen,  p {
+    width: 35vh;
+    height: auto;
+    gap: 5px;
+    margin-top: 20px;
+  }
+
+  .item1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    gap: 20px;
+  }
+
+  .nav-item a {
+    text-decoration: none;
+    color: white;
+    font-size: small;
+
+  }
+
+}
+
+/* aqui iba a ir un boton de avanzar pero lo elimino por el momento */
+/* .boton {
+  position: absolute;
+  right: 30px;
+  top: 310px;
+  height: 50px;
+  width: 50px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  font-size: 25px;
+}
+
+.boton:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
+
+.boton:active {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+  transform: translateY(-4px);
+} */
+
+
+/* aca empieza el codigo del footer */
+
+.btn_social {
+
+  width: 100%;
+  float: left;
+  display: flex;
+  margin: auto;
+}
+
+.btn_social ul {
+
+  width: auto;
+  margin: auto;
+  float: left;
+  display: block;
+}
+
+.btn_social ul li {
+
+  position: relative;
+  background: #c0b3b3;
+  list-style: none;
+  float: left;
+  margin: 5px;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 3px;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.btn_social ul li a {
+
+  width: 50px;
+  height: 50px;
+  line-height: 53px;
+  display: block;
+  text-decoration: none;
+  color: #a72295;
+  transition: .4s;
+
+}
+
+.btn_social ul li::before {
+
+  transition: 0.4s;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 90%;
+  left: 0;
+  background: rgba(26, 40, 85, 0.973);
+  z-index: -1;
+  transform: scale(1);
+  transition: .4s;
+}
+
+.btn_social ul li:hover::before {
+  transition: 0.4s;
+  top: 0%;
+}
+
+.btn_social ul li a:hover {
+  color: white;
+}

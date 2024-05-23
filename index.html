@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles/index.css">
+  <title>Presentacion</title>
+</head>
+
+<body>
+
+  <header>
+    <img src="../public/imgs/logo sabrina.jpg" width="40px" height="40px">
+    <nav>
+      
+      <div class="nav-container">
+        <ul id="navmenu">
+          <div class="nav-row">
+            <div class="nav-item">
+              <a href="./index.html">Me presento</a>
+            </div>
+            <div class="nav-item">
+              <a href="./Conocimientos.html">Conocimiento</a>
+            </div>
+            <div class="nav-item">
+              <a href="./Experiencia.html">Experiencia</a>
+            </div>
+            <div class="nav-item">
+              <a href="./Proyectos.html">Mis proyectos</a>
+            </div>
+          </div>
+
+        </ul>
+      </div>
+
+    </nav>
+  </header>
+  <!-- termina nav -->
+
+  <main>
+
+    <div class="contenedor-principal">
+
+
+      <img class="imagen" src="./imgs/Sabri-Perfil.jpg" />
+
+
+
+      <!-- <p class="lorem"> -->
+      <p> Bienvenidos a mi portfolio personal. Mi nombre es Sabrina Techera y estoy iniciando en este nuevo universo de
+        la programación. Este espacio es mi primer logro y va estar en constante mejora a medida que vaya incorporando
+        nuevos conocimientos. <br>
+        Los invito a conocerme . <a href="./Conocimientos.html"><input class="boton" type="button" value="►" /></a>
+      </p>
+
+
+      
+    </div>
+
+  </main>
+ 
+
+<!-- aca empieza el footer -->
+  <footer class=" btn_social">
+
+    <ul>
+      <li><a href="https://api.whatsapp.com/send?phone=5491136980222&text=Hola!" target="_blank" title="MI NUMERO">
+          <i class="fa-solid fa-phone-volume"></i></a></li>
+
+      <li><a href="https://www.linkedin.com/in/sabrina-techera-32799a1a6/" target="_blank" title="LINKEDIN">
+          <i class="fa-brands fa-linkedin"></i></a></li>
+
+      <li><a href="https://github.com/sabrinatechera" target="_blank" title="gmail"> <i class="fa-brands fa-github"></i></a>
+      </li>
+
+      <li><a href="sabrinatecherasosa@gmail.com" target="_blank" title="sabrinatecherasosa@gmail.com"> <i
+            class="fa-sharp fa-solid fa-envelope"></i></a></li>
+
+    </ul>
+
+  </footer>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+   
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</body>
+
+</html>

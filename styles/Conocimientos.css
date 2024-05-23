@@ -1,0 +1,249 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* empeiza en el nav */
+header {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Catamaran, sans-serif;
+    box-sizing: inherit;
+    padding: 15px;
+    background-color: black;
+    color: #fff;
+    height: 30px;
+
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: Catamaran, sans-serif;
+    box-sizing: inherit;
+    padding: .5em 1em;
+
+}
+
+.nav-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    gap: 20px;
+
+}
+
+.nav-item {
+    border: 3px solid rgb(80, 88, 199);
+    background-color: rgba(50, 79, 173, 0.973);
+    padding: 5px;
+    border-radius: 10px;
+    font-family: cursive;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.nav-item a:hover {
+    color: rgba(0, 0, 0, 0.884);
+    transition: 0.3s;
+}
+
+body {
+
+    background-image: url("../imgs/backgroundportfolio.jpg")
+}
+
+/* termina el nav */
+
+/* empieza el main */
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 10px;
+}
+
+.contenedor-principal {
+    width: 100%;
+    max-width: 1200px;
+    /* margin: auto; */
+    display: flex;
+    justify-content: center;
+    margin: 50px 50px 0 100px
+}
+
+.conocimientos-container {
+    width: 70%;
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    height: auto;
+
+}
+
+#en {
+    background-color: #ac7b5700;
+    height: 40px;
+    width: 150px;
+    margin-top: 15px;
+    font-size: large;
+    border-left-color: #C2C1C1;
+    border-top-color: #C2C1C1;
+    border-right-color: #929292;
+    border-bottom-color: #929292;
+    color: black;
+}
+
+#en:hover {
+    border-color: white;
+}
+
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+    .contenedor-principal {
+        width: 80vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        gap: 20px;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+
+    header,
+    .nav-container,
+    .nav-row,
+    .nav-item {
+        width: auto;
+        font-size: 10px;
+    }
+    .contenedor-principal, .conocimientos-container {
+        width: 50vh;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+}
+
+/* aca iba a ir unn boton de adelante pero lo saco por ahora */
+/*
+.boton {
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    font-size: 25px;
+
+}
+
+.boton:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+.boton:active {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+    transform: translateY(-4px);
+} */
+
+
+
+
+/* aca empieza el codigo del footer */
+
+.btn_social {
+
+    width: 100%;
+    float: left;
+    display: flex;
+    margin: auto;
+}
+
+.btn_social ul {
+
+    width: auto;
+    margin: auto;
+    float: left;
+    display: block;
+}
+
+.btn_social ul li {
+
+    position: relative;
+    background: #c0b3b3;
+    list-style: none;
+    float: left;
+    margin: 5px;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 3px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.btn_social ul li a {
+
+    width: 50px;
+    height: 50px;
+    line-height: 53px;
+    display: block;
+    text-decoration: none;
+    color: #a72295;
+    transition: .4s;
+
+}
+
+.btn_social ul li::before {
+
+    transition: 0.4s;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 90%;
+    left: 0;
+    background: rgba(26, 40, 85, 0.973);
+    z-index: -1;
+    transform: scale(1);
+    transition: .4s;
+}
+
+.btn_social ul li:hover::before {
+    transition: 0.4s;
+    top: 0%;
+}
+
+.btn_social ul li a:hover {
+    color: white;
+}
+
+/*
+
+.link-button{
+height: 100%;
+margin-top: -70px;
+display: flex;
+align-items: center;
+margin-left: 40px;
+text-decoration: none;
+} */
